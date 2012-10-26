@@ -16,6 +16,10 @@ public class Loft {
 		this.largeur = largeur;
 	}
 	
+	public getPopulation() {
+		
+	}
+	
 	public void initialiser(){
 		
 		
