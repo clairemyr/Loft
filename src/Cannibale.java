@@ -18,6 +18,7 @@ public class Cannibale extends Vorace {
 	public Object getProie() {
 		int i;
 		for (i=0; i < (maison.getPopulation().size()); i++) {
+			
 		}
 	}
 	

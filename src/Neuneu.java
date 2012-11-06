@@ -1,10 +1,14 @@
+import java.awt.Graphics;
+import java.awt.Color;
 
-public class Neuneu extends Object {
+
+public class Neuneu implements ObjetDessinable {
 	protected int besoinsEnergetiques;
 	protected int energie;
 	protected int abs;
 	protected int ord;
 	protected Loft maison;
+	protected Color couleur;
 	
 	
 	public Neuneu( int besoinsE, int energie, int abs, int ord, Loft maison)
@@ -69,6 +73,11 @@ public class Neuneu extends Object {
 	
 	public int getOrd() {
 		return this.ord;
+	}
+	
+	@Override
+	public void dessinerObjet(Graphics g) {
+		g.setColor(couleur);
 	}
 	
 }

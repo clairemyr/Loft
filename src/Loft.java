@@ -1,44 +1,54 @@
 import java.util.LinkedList;
+import java.awt.Graphics;
 
 
-public class Loft {
+public class Loft implements ObjetDessinable {
 	protected LinkedList<Neuneu> population;
-	protected LinkedList<Case> maison;
-	protected LinkedList<Aliment> nourriture;
+	protected LinkedList<Aliment> aliments;
 	protected int hauteur;
 	protected int largeur;
+	protected ZoneGraphique zone;
 	
-	public Loft(LinkedList<Neuneu> population, LinkedList<Case> maison, LinkedList<Aliment> nourriture, int hauteur, int largeur){
+	public Loft(LinkedList<Neuneu> population, LinkedList<Aliment> aliments, int hauteur, int largeur){
 		this.population = population;
-		this.maison = maison;
-		this.nourriture = nourriture;
+		this.aliments = aliments;
 		this.hauteur = hauteur;
 		this.largeur = largeur;
 	}
 	
-	public getPopulation() {
-		
+	public Loft(int tailleLoft, ZoneGraphique zone) {
+		this.hauteur=tailleLoft;
+		this.largeur=tailleLoft;
+		this.zone=zone;
 	}
 	
-	public void initialiser(){
-		
-		
-		
-		
+	public LinkedList<Neuneu> getPopulation() {
+		return population;
 	}
 	
-	public void afficheLoft(){
-		
+	public void go() {
+		int nbtour=0;
+		while (population.size()>0 && nbtour<20) {
+			
+		}
+	}
+	
+	@Override
+	public void dessinerObjet(Graphics g){
+		for (int i = 0 ; i < aliments.size() ; i++) {
+			aliments.get(i).dessinerObjet(g);
+		}
+
+		for (int i = 0 ; i < population.size() ; i++) {
+			population.get(i).dessinerObjet(g);
+		}
 	}
 	
 	
-	public void ajouterNeuneu(){
-	// cette méthode semble inutile si on utilise un add dans la LinkedList	
+	public void add(Neuneu neuneu){
+		this.population.add(neuneu);
 	}
-	
-	//tour de jeu
-	public void go(){
-	}
+
 	
 	public void exclureNeuneu(){
 		

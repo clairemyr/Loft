@@ -1,8 +1,11 @@
+import java.awt.Graphics;
+import java.awt.Color;
 
-public class Aliment extends Object {
+public class Aliment implements ObjetDessinable {
 	protected int energie;
 	protected int abs;
 	protected int ord;
+	protected Color couleur;
 	
 	public Aliment(int energie, int abs, int ord) {
 		this.energie = energie;
@@ -32,5 +35,11 @@ public class Aliment extends Object {
 	
 	public void setOrd(int y) {
 		this.ord=y;
+	}
+	
+	@Override
+	public void dessinerObjet(Graphics g){
+		g.setColor(couleur);
+		
 	}
 }

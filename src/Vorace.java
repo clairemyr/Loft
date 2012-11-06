@@ -16,7 +16,7 @@ public class Vorace extends Erratique {
 	}
 	
 	public Object getProie() {
-		for (int i=0; i<(this.maison.nourriture.size()); i=i+1 ) {
+		for (int i=0; i<(this.maison.aliments.size()); i=i+1 ) {
 		}
 	}
 	

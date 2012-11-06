@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.objet.lofteurs;
+//package com.objet.lofteurs;
 
 import java.awt.Graphics;
 
