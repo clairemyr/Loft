@@ -2,7 +2,7 @@ import java.awt.Graphics;
 import java.awt.Color;
 
 
-public class Neuneu implements ObjetDessinable {
+public class Neuneu extends ObjetLoft {
 	protected int besoinsEnergetiques;
 	protected int energie;
 	protected int abs;
@@ -65,14 +65,6 @@ public class Neuneu implements ObjetDessinable {
 	
 	public void setEnergie(int nrj) {
 		this.energie=nrj;
-	}
-	
-	public int getAbs() {
-		return this.abs;
-	}
-	
-	public int getOrd() {
-		return this.ord;
 	}
 	
 	@Override

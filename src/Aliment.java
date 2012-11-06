@@ -1,7 +1,7 @@
 import java.awt.Graphics;
 import java.awt.Color;
 
-public class Aliment implements ObjetDessinable {
+public class Aliment extends ObjetLoft {
 	protected int energie;
 	protected int abs;
 	protected int ord;
@@ -21,16 +21,8 @@ public class Aliment implements ObjetDessinable {
 		this.energie=nrj;
 	}
 	
-	public int getAbs() {
-		return this.abs;
-	}
-	
 	public void setAbs(int x) {
 		this.abs=x;
-	}
-	
-	public int getOrd()  {
-		return this.ord;
 	}
 	
 	public void setOrd(int y) {
