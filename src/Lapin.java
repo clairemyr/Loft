@@ -14,8 +14,4 @@ public class Lapin extends Erratique {
 		
 	}
 	
-	public void getProie() {
-		
-	}
-	
 }

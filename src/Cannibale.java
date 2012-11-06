@@ -18,11 +18,4 @@ public class Cannibale extends Vorace {
 		this.setEnergie(this.getEnergie()+proie.getEnergie());
 	}
 	
-	public Object getProie() {
-		int i;
-		for (i=0; i < (maison.getPopulation().size()); i++) {
-			
-		}
-	}
-	
 }
