@@ -1,3 +1,4 @@
+import java.awt.Color;
 
 public class Lapin extends Erratique {
 	
@@ -5,6 +6,7 @@ public class Lapin extends Erratique {
 		super(abs, ord, maison);
 		this.besoinsEnergetiques = 1000;
 		this.energie = 600;
+		this.couleur = Color.pink;
 	}
 
 	
@@ -16,7 +18,4 @@ public class Lapin extends Erratique {
 		
 	}
 	
-	public void afficher() {
-		
-	}	
 }

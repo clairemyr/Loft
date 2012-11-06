@@ -1,3 +1,4 @@
+import java.awt.Color;
 
 public class Erratique extends Neuneu {
 	
@@ -5,6 +6,7 @@ public class Erratique extends Neuneu {
 		super(abs, ord, maison);
 		this.besoinsEnergetiques = 800;
 		this.energie = 500;
+		this.couleur = Color.blue;
 	}
 	
 	public void seDeplacer() {
@@ -15,7 +17,4 @@ public class Erratique extends Neuneu {
 		
 	}
 	
-	public void afficher () {
-		
-	}
 }

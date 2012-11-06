@@ -1,10 +1,13 @@
 
+import java.awt.Color;
+
 public class Cannibale extends Vorace {
 
 	public Cannibale(int abs, int ord, Loft maison) {
 		super(abs, ord, maison);
 		this.besoinsEnergetiques = 700;
 		this.energie = 400;
+		this.couleur = Color.red;
 	}
 	
 	public void manger(Neuneu proie) {
@@ -22,7 +25,4 @@ public class Cannibale extends Vorace {
 		}
 	}
 	
-	public void afficher() {
-		
-	}
 }
