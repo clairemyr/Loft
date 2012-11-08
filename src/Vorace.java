@@ -9,11 +9,19 @@ public class Vorace extends Erratique {
 		this.couleur = Color.orange;
 	}
 	
-	public void manger() {
+	public void seDeplacer() {
+		// il cherche de la nourriture quand il n'a plus assez d'énergie 
+		//sinon les aliments disparaissent trop vite
+		if (this.energie < 450 ){
+			ObjetLoft Aliment = this.getProieAliment();
+			this.setPosition (Aliment.getAbs(), Aliment.getOrd());	
+		}
+		else {
+		}
 		
 	}
 	
-	public void seDeplacer() {
+	public void manger() {
 		
 	}
 	

@@ -10,7 +10,7 @@ public class Erratique extends Neuneu {
 	}
 	
 	public void seDeplacer() {
-		
+		this.setPosition((int)(Math.random()*this.maison.largeur), (int)(Math.random()*this.maison.hauteur));
 	}
 	
 	public void manger () {
