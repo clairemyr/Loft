@@ -32,6 +32,6 @@ public class Aliment extends ObjetLoft {
 	@Override
 	public void dessinerObjet(Graphics g){
 		g.setColor(couleur);
-		
+		g.fillRect((int)this.getAbs()*20, (int) this.getOrd()*20, 20, 20);
 	}
 }

@@ -77,6 +77,7 @@ public class Neuneu extends ObjetLoft {
 	@Override
 	public void dessinerObjet(Graphics g) {
 		g.setColor(couleur);
+		g.fillOval((int)this.getAbs()*20, (int) this.getOrd()*20, 20, 20);
 	}
 	
 }

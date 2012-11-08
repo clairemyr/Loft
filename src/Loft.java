@@ -51,7 +51,7 @@ public class Loft implements ObjetDessinable {
 				this.population.get(i).seDeplacer();
 				this.population.get(i).setEnergie(this.population.get(i).getEnergie() - 2);
 				this.population.get(i).manger();
-				this.population.get(i).affiche();
+				this.population.get(i).dessinerObjet();
 			}*/	
 			
 			
