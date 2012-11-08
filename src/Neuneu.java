@@ -27,6 +27,13 @@ public class Neuneu extends ObjetLoft {
 		this.maison = maison;		
 	}
 
+	
+	public void setPosition (int abs, int ord){
+		this.abs = abs;
+		this.ord = ord;
+	}
+	
+	
 	public void seReproduire(Neuneu partenaire, Loft maison) {
 		partenaire.setEnergie((int)(partenaire.getEnergie()-partenaire.getBesoinsEnergetiques()*0.5));
 		this.setEnergie((int)(this.energie-this.besoinsEnergetiques*0.5));
