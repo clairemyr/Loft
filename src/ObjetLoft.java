@@ -1,8 +1,7 @@
 import java.awt.Graphics; 
 import java.awt.Color;
 
-public class ObjetLoft implements ObjetDessinable {
-	protected int abs;
+public class ObjetLoft implements ObjetDessinable {	protected int abs;
 	protected int ord;
 	protected Color couleur;
 	
